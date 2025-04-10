@@ -8,10 +8,10 @@ class ContactManager:
         # TODO: Create a list to store contacts
         self.contact_list = []
 
-    def add_contact(self, name, phone, email):
+    def add_contact(self, contact):
         # TODO: Add contact to the list
-        contacts = Contact(name, phone, email)
-        self.contact_list.append(contacts)
+        
+        self.contact_list.append(contact)
 
     def list_contacts(self):
         # TODO: Return list of all contacts

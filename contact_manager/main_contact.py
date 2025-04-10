@@ -14,11 +14,14 @@ def main():
         if choice == "1":
             # TODO: Get input and add contact
             # contact = "Jane Doe", "123-456-7890", "jane@example.com")
-            manager.add_contact(
+            contact = Contact(
                 input("Enter Name: "),
                 input("Enter Phone: "), 
                 input("Enter Email: ")
-            )
+                )
+            
+            manager.add_contact(contact)
+            
 
         elif choice == "2":
             # TODO: Print all contacts
