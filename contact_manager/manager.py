@@ -62,7 +62,7 @@ class ContactManager:
                     self.contact_list.append(contact)
 
         except FileNotFoundError:
-            print(f'No previous contact list foudn at {filename}. Starting with an empty list')
+            print(f'No previous contact list found at {filename}. Starting with an empty list')
         except Exception as e:
             print(f'An error occured while loading contacts: {e}')
 
